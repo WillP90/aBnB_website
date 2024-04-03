@@ -10,12 +10,16 @@
     <div class="container">
         <div class="header">
             <img class="hImg" src="static/airBnB.png" alt="AirBnB logo">
-            <div class="hamburger">
+            <span id="nav_label" hidden>Navigation</span>
+            <button id="btnOpen" class="hamburger_open" aria-expanded="false" aria-labelledby="nav_label">
+                <img src="static/download.png" alt="" width="28" height="27">
+            </button>
+            <div class="hamburger" role="dialog" aria-labelledby="nav_label">
                 <button class="hamburger_close">
                     <img src="/static/download.png" alt="" width="28" height="27">
                 </button>
                 <ul class="header_list">
-                    <li class="hList_item"><a href="">Amenaties</a></li>
+                    <li class="hList_item"><a href="">About Us</a></li>
                     <li class="hList_item"><a href="">How To Videos</a></li>
                     <li class="hList_item"><a href="">Contact Info</a></li>
                 </ul>
