@@ -33,11 +33,20 @@
         translate: 100vw 0;
         transition: translate 0.5s ease-in-out;
     }
+
+    @media (width < 40em) and (prefers-reduced-motion){
+        translate: 0;
+        opacity: 0;
+        transition: opacity 500ms ease-in-out;
+    }
 }
 
 .hamburger_open[aria-expanded='true']{
     + .hamburger{
         translate: 0;
+        @media (prefers-reduced-motion){
+            opacity: 1;
+        }
     }
 }
 
